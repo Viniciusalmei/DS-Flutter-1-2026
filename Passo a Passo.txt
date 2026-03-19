@@ -1,0 +1,26 @@
+Após criar o projeto você precisa habilitar as permissões do android no arquivo AndroidManifest.xml 
+
+O caminho fica: 
+Dentro da pasta Android 
+Pasta App 
+Pasta Src
+Pasta Main --> Aqui esta o arquivo AndroidManifest.xml
+
+
+Antes da tag "application" adicione: 
+<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+Após isso encontre a tag "queries" e adicione: 
+<intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+</intent>
+
+------------------------------------
+Após isso vá ao arquivo pubscpeck..yaml e adicione na linha 37 a biblioteca :
+url_launcher: ^6.3.2
+
+----------------------------------
+
+Feito isso você pode criar seu app seguindo o exemplo do projeto deste repositório.
