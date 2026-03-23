@@ -13,9 +13,9 @@ Antes da tag "application" adicione:
 
 Após isso encontre a tag "queries" e adicione: 
 <intent>
-            <action android:name="android.intent.action.PROCESS_TEXT"/>
-            <data android:mimeType="text/plain"/>
-</intent>
+            <action android:name="android.intent.action.VIEW" /> 
+            <data android:scheme="https" />
+        </intent>
 
 ------------------------------------
 Após isso vá ao arquivo pubscpeck..yaml e adicione na linha 37 a biblioteca :
