@@ -1,4 +1,5 @@
-import 'package:app_login/screens/screen.login.dart';
+import 'package:app_login/navigation/navigation.navbar.dart';
+import 'package:app_login/screens/screen.loginapi.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: TelaLogin()
+      home: NavBar()
     );
   }
 }

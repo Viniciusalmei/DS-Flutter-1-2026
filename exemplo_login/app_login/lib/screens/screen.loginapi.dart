@@ -4,14 +4,14 @@ import 'package:app_login/screens/screens.home.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class TelaLogin extends StatefulWidget {
-  const TelaLogin({super.key});
+class TelaLoginAPI extends StatefulWidget {
+  const TelaLoginAPI({super.key});
 
   @override
-  State<TelaLogin> createState() => _TelaLoginState();
+  State<TelaLoginAPI> createState() => _TelaLoginAPIState();
 }
 
-class _TelaLoginState extends State<TelaLogin> {
+class _TelaLoginAPIState extends State<TelaLoginAPI> {
   TextEditingController nomeDigitado = TextEditingController();
   TextEditingController senhaDigitada = TextEditingController();
   
@@ -50,7 +50,7 @@ class _TelaLoginState extends State<TelaLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title:Text("App Login")),
+      appBar: AppBar(title:Text("App Login API")),
       body: Center(child: 
       Column(
         children: [
