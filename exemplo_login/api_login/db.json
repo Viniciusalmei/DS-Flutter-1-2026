@@ -1,0 +1,16 @@
+{
+    "users": [
+        {"id":1,
+        "nome":"joao",
+        "senha":"123"
+    },
+    {"id":2,
+        "nome":"maria",
+        "senha":"123"
+    },
+    {"id":3,
+        "nome":"vitor",
+        "senha":"123"
+    }
+    ]
+}
